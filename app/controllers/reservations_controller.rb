@@ -5,7 +5,6 @@ class ReservationsController < ApplicationController
   # GET /reservations
   def index
     @reservations = Reservation.all
-
     render json: @reservations
   end
 
@@ -17,7 +16,6 @@ class ReservationsController < ApplicationController
   # POST /reservations
   def create
     @reservation = Reservation.new(reservation_params)
-    byebug
     if @reservation.save
       render json: @reservation, status: :created, location: @reservation
     else
