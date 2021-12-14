@@ -78,6 +78,7 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 npx stylelint "**/*.{css,scss}" --fix
 ```
 
+
 ### Instruction for non technical persons
 
 If you are non a technical person you can download the zip file.

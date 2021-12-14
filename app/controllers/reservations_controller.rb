@@ -1,5 +1,7 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: %i[show update destroy]
+  before_action :authenticate_user!, only: %i[create update destroy]
+
 
   # GET /reservations
   def index
@@ -16,7 +18,6 @@ class ReservationsController < ApplicationController
   # POST /reservations
   def create
     @reservation = Reservation.new(reservation_params)
-
     if @reservation.save
       render json: @reservation, status: :created, location: @reservation
     else
@@ -47,6 +48,7 @@ class ReservationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def reservation_params
-    params.require(:reservation).permit(:date, :city, :item_id)
+    params.require(:reservation).permit(:date, :city, :item_id, :user_id)
+
   end
 end

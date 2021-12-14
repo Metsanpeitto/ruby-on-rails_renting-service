@@ -1,10 +1,10 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: %i[show update destroy]
+  before_action :authenticate_user!, only: %i[create update destroy]
 
   # GET /items
   def index
     @items = Item.all
-
     render json: @items
   end
 
@@ -47,6 +47,6 @@ class ItemsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def item_params
-    params.require(:item).permit(:name, :description, :image, :color, :price)
+    params.require(:item).permit(:user_id, :name, :description, :image, :color, :price)
   end
 end
