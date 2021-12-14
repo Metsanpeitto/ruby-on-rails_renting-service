@@ -17,7 +17,6 @@ class ReservationsController < ApplicationController
   # POST /reservations
   def create
     @reservation = Reservation.new(reservation_params)
-    byebug
     if @reservation.save
       render json: @reservation, status: :created, location: @reservation
     else
