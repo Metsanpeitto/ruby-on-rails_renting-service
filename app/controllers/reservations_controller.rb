@@ -1,12 +1,9 @@
 class ReservationsController < ApplicationController
-  before_action :set_reservation, only: %i[show update destroy]
-  before_action :authenticate_user!, only: %i[create update destroy]
+  before_action :set_reservation, only: %i[show update]
+  before_action :authenticate_user!, only: %i[create update]
 
-
-  # GET /reservations
   def index
     @reservations = Reservation.all
-
     render json: @reservations
   end
 
@@ -34,11 +31,6 @@ class ReservationsController < ApplicationController
     end
   end
 
-  # DELETE /reservations/1
-  def destroy
-    @reservation.destroy
-  end
-
   private
 
   # Use callbacks to share common setup or constraints between actions.
@@ -49,6 +41,5 @@ class ReservationsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def reservation_params
     params.require(:reservation).permit(:date, :city, :item_id, :user_id)
-
   end
 end
