@@ -1,7 +1,7 @@
 Rails.application.routes.draw do  
   mount Rswag::Ui::Engine => '/api-docs'
   mount Rswag::Api::Engine => '/api-docs'
-  get '/',to: "items/index"
+  root to: "items#index"
   get 'current_user/index'
   
   devise_for :users, defaults: { format: :json }, path: '',
