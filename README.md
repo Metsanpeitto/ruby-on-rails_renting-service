@@ -48,6 +48,15 @@ cd ./microverse_final_project
 bundle install
 ```
 
+### Add the secret key
+
+In order to be able to run the database and make Devise working propperly, the user should go
+to the folder src/config/master.key and remove the key in there, then add:
+
+```cmd
+4797e00318a9ffcedc9d76ff6ef8dbf8
+```
+
 ### Apply migration (only if you generate a new migration file)
 
 ```cmd
