@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
-  before_action :set_reservation, only: %i[show update destroy]
-  before_action :authenticate_user!, only: %i[create update destroy]
+  before_action :set_reservation, only: %i[show update]
+  before_action :authenticate_user!, only: %i[create update]
 
   # GET /reservations
   def index
@@ -30,11 +30,6 @@ class ReservationsController < ApplicationController
     else
       render json: @reservation.errors, status: :unprocessable_entity
     end
-  end
-
-  # DELETE /reservations/1
-  def destroy
-    @reservation.destroy
   end
 
   private
