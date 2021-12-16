@@ -18,6 +18,7 @@ The user can manage ships and reservations. As well as explore the ones existing
  This project is composed by this repository and a frontend created with ReactJS. 
  
  [Get the ReactJS App here](https://github.com/Metsanpeitto/microverse_final_project_front)
+ [Visit the front end here](https://dry-peak-20261.herokuapp.com/)
 
  In order to run it locally this rails app should be 
 initialized before the ReactJS app.
