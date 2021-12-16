@@ -16,6 +16,7 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'd8bdb158f62b5b50e71b2034d8ef498261c5a70a76e8fd6c042a3b83bd9565b48181423919a632de19f1cfd5d8fadab63815f1ac65db988fbe287ad1a4c3d9e6'
 
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -316,7 +317,9 @@ Devise.setup do |config|
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
 
-  config.jwt do |jwt|
+  config.jwt do |jwt|  
+    byebug
+
   jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
      jwt.dispatch_requests = [
       ['POST', %r{^/login$}]
