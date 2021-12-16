@@ -5,21 +5,36 @@
 
 
  This is the final project of the Microverse curriculum. It consists of a backend built with Ruby on Rails and a frontend built withReactjs/Redux. 
-The project itself offers a service, the renting of a motorbike for a period of time. 
+
+ The project itself offers a service, the renting of a boat for a period of time. 
 
  We did follow the given design of the website, but personalized the content, i.e., instead of booking an appointment to try a motorcycle, we built an app to book an trip in a ship. 
 
  
-
 The user can manage ships and reservations. As well as explore the ones existing. 
 
+Even if we are a team of two people, we decided to build the project based on the requirements of the group of 5 people.
+
 [App Requirements](https://github.com/microverseinc/curriculum-final-capstone/blob/main/projects/business_requirements.md)
+
+=======
+
+### API Documentation
+
+[API Documentation](https://frozen-dusk-66130.herokuapp.com/api-docs/index.html)
+
+### Deployed App
+
+[API Deployed](https://frozen-dusk-66130.herokuapp.com/api-docs/index.html)
+
+=======
 
 ### NOTE TO CODE REVIEWERS
 
  This project is composed by this repository and a frontend created with ReactJS. 
  
  [Get the ReactJS App here](https://github.com/Metsanpeitto/microverse_final_project_front)
+
  [Visit the front end here](https://dry-peak-20261.herokuapp.com/)
 
  In order to run it locally this rails app should be 
@@ -36,6 +51,7 @@ initialized before the ReactJS app.
 ```cmd
  http://localhost:3001
 ```
+There is also a chance that the front end app is already obtaining the data from the deployed Rails API.
 
 =======
 
@@ -51,7 +67,10 @@ initialized before the ReactJS app.
 To run this project you must to have ruby installed in your machine. If you don't have it
 follow the instructions [here](https://www.ruby-lang.org/en/documentation/installation/)
 
-## Getting Started
+=======
+
+
+### Getting Started
 
 If you want a copy of this file go to the github repository and download it from there
 
@@ -109,7 +128,7 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 ```
 npx stylelint "**/*.{css,scss}" --fix
 ```
-
+=======
 
 ### Instruction for non technical persons
 
