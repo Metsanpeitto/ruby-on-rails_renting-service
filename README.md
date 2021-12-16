@@ -15,7 +15,11 @@ The user can manage ships and reservations. As well as explore the ones existing
 
 ### NOTE TO CODE REVIEWERS
 
- This project is composed by this repository and a frontend created with ReadtJS. In order to run it locally this rails app should be 
+ This project is composed by this repository and a frontend created with ReactJS. 
+ 
+ [Get the ReactJS App here](https://github.com/Metsanpeitto/microverse_final_project_front)
+
+ In order to run it locally this rails app should be 
 initialized before the ReactJS app.
 
 - So Rails app will run on:
