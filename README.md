@@ -11,8 +11,24 @@ The project itself offers a service, the renting of a motorbike for a period of 
 
 The user can manage ships and reservations. As well as explore the ones existing. 
 
-
 [App Requirements](https://github.com/microverseinc/curriculum-final-capstone/blob/main/projects/business_requirements.md)
+
+### NOTE TO CODE REVIEWERS
+
+ This project is composed by this repository and a frontend created with ReadtJS. In order to run it locally this rails app should be 
+initialized before the ReactJS app.
+
+- So Rails app will run on:
+
+```cmd
+ http://localhost:3000
+```
+
+- And the ReactJS app will run on:
+
+```cmd
+ http://localhost:3001
+```
 
 =======
 
