@@ -9,6 +9,8 @@ The project itself offers a service, the renting of a motorbike for a period of 
 
  We did follow the given design of the website, but personalized the content, i.e., instead of booking an appointment to try a motorcycle, we built an app to book an trip in a ship. 
 
+ 
+
 The user can manage ships and reservations. As well as explore the ones existing. 
 
 [App Requirements](https://github.com/microverseinc/curriculum-final-capstone/blob/main/projects/business_requirements.md)
@@ -75,7 +77,7 @@ In order to be able to run the database and make Devise working propperly, the u
 to the folder src/config/master.key and remove the key in there, then add:
 
 ```cmd
-4797e00318a9ffcedc9d76ff6ef8dbf8
+c226854fe4a838c57265d7088709aa53
 ```
 
 ### Apply migration (only if you generate a new migration file)
