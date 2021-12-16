@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Assuming you have not yet modified this file, each configuration option below
 # is set to its default value. Note that some are commented out while others
 # are not: uncommented lines are intended to protect your configuration from
@@ -15,7 +13,6 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = 'd8bdb158f62b5b50e71b2034d8ef498261c5a70a76e8fd6c042a3b83bd9565b48181423919a632de19f1cfd5d8fadab63815f1ac65db988fbe287ad1a4c3d9e6'
-
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -284,11 +281,11 @@ Devise.setup do |config|
   #   manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
 
-    # config.warden do |manager|
-    ## manager.intercept_401 = false
-    #manager.strategies.add :jwt, Devise::Strategies::JWT
-    #manager.default_strategies(scope: :user).unshift :jwt
-    #end
+  # config.warden do |manager|
+  ## manager.intercept_401 = false
+  # manager.strategies.add :jwt, Devise::Strategies::JWT
+  # manager.default_strategies(scope: :user).unshift :jwt
+  # end
 
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
@@ -317,11 +314,11 @@ Devise.setup do |config|
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
 
-  config.jwt do |jwt|  
+  config.jwt do |jwt|
     byebug
 
-  jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
-     jwt.dispatch_requests = [
+    jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
+    jwt.dispatch_requests = [
       ['POST', %r{^/login$}]
     ]
     jwt.revocation_requests = [
