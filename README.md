@@ -146,6 +146,7 @@ npx stylelint "**/*.{css,scss}" --fix
 ```
 =======
 
+
 ### Screenshots of how the frontend displays the data
 Main page
 ![https://i.imgur.com/ueP13ao.png](https://i.imgur.com/ueP13ao.png)
