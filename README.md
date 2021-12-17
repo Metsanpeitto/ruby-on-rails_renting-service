@@ -25,7 +25,7 @@ Even if we are a team of two people, we decided to build the project based on th
 
 ### Deployed App
 
-[API Deployed](https://frozen-dusk-66130.herokuapp.com/api-docs/index.html)
+[API Deployed](https://frozen-dusk-66130.herokuapp.com/items)
 
 =======
 
