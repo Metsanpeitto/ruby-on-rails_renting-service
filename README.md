@@ -23,9 +23,10 @@ Even if we are a team of two people, we decided to build the project based on th
 
 [API Documentation](https://frozen-dusk-66130.herokuapp.com/api-docs/index.html)
 
-### Deployed App
+### Deployed Apps
 
-[API Deployed](https://frozen-dusk-66130.herokuapp.com/items)
+[Backend](https://frozen-dusk-66130.herokuapp.com/items)
+[Frontend](https://friendly-hugle-cbed27.netlify.app/my_reservations)
 
 =======
 
@@ -35,7 +36,8 @@ Even if we are a team of two people, we decided to build the project based on th
 - To test the app locally ensure that the rails backend is running,so this 
 app uses the address http://locahost:3000 and the ReactJS the address http://locahost:3001
 
-- In order to try the features exclusive for administrator signup with the defaul values.
+
+#### In order to try the features exclusive for administrator signup with the defaul values.
 Or input: 
 
 ```cmd
