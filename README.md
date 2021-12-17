@@ -46,16 +46,6 @@ password: 123456
 ### Kanban board screenshot
 ![https://i.imgur.com/8G0sWBn.png](https://i.imgur.com/8G0sWBn.png)
 
-### Screenshots
-Main page
-![https://i.imgur.com/ueP13ao.png](https://i.imgur.com/ueP13ao.png)
-
-Signup page
-![https://i.imgur.com/DkMI117.png](https://i.imgur.com/DkMI117.png)
-
-Details page
-![https://i.imgur.com/NOJezfx.png](https://i.imgur.com/NOJezfx.png)
-
 
  This project is composed by this repository and a frontend created with ReactJS. 
  
@@ -155,6 +145,16 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 npx stylelint "**/*.{css,scss}" --fix
 ```
 =======
+
+### Screenshots of how the frontend displays the data
+Main page
+![https://i.imgur.com/ueP13ao.png](https://i.imgur.com/ueP13ao.png)
+
+Signup page
+![https://i.imgur.com/DkMI117.png](https://i.imgur.com/DkMI117.png)
+
+Details page
+![https://i.imgur.com/NOJezfx.png](https://i.imgur.com/NOJezfx.png)
 
 ### Instruction for non technical persons
 
