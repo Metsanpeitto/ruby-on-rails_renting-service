@@ -26,7 +26,7 @@ Even if we are a team of two people, we decided to build the project based on th
 ### Deployed Apps
 
 [Backend](https://frozen-dusk-66130.herokuapp.com/items)
-[Frontend](https://friendly-hugle-cbed27.netlify.app/my_reservations)
+[Frontend](https://friendly-hugle-cbed27.netlify.app)
 
 =======
 
